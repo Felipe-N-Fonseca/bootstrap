@@ -1,0 +1,11 @@
+.row{
+    margin-bottom: 10px;
+} 
+.col{
+    margin-bottom: 10px;
+}
+.card{
+    width: 100%;
+    float: left;
+    margin: 5px;
+}
