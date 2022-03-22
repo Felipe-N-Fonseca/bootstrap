@@ -18,3 +18,19 @@ input, textarea{
 header{
     padding-top: 1rem;
 }
+header a{
+ margin: auto 2px;
+}
+body{
+    background-color: ghostwhite;
+}
+.btn-info{
+ color: #e8dada;
+ background-color: #340675;
+ border-color: #dd0085;
+}
+.btn-primary {
+    color: #fdeaea;
+    background-color: #7c0dfd;
+    border-color: #9f0000;
+}
