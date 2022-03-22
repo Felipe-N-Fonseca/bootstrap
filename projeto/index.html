@@ -56,7 +56,7 @@
                         <div class="card-body">
                             <h5 class="card-title">Maçã</h5>
                             <p class="card-text">Uma belissima maçã, cultivada em um pomar da mais alta qualidade.</p>
-                            <a class="btn btn-primary" href="#produto-1">Ver produto</a>
+                            <a class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#produto-1">Ver produto</a>
                         </div>
                     </div>
                 </div>
@@ -120,6 +120,40 @@
             </div>
         </div>
     </section>
+    <div class="modal fade" id="produto-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">maçã</h5>
+                    <button class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <h6>Tabela de preços:</h6>
+                    <table class="table table-hover">
+                        <thead>
+                            <tr>
+                                <th>tamanho</t>
+                                <th>preço</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>8cm</td>
+                                <td>R$3.50</td>
+                            </tr>
+                            <tr>
+                                <td>4.5cm</td>
+                                <td>R$2.50</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
     <script src="../bootstrap/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
