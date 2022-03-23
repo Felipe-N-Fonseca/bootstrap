@@ -35,61 +35,55 @@
         <div class="container">
             <div class="row">
                 <div class="col">
-                    <h2>Contato</h2>
-                    <p>Se ficou interessado em algo, entre em contato conosco 😊</p>                    
+                    <h2>Cadastro</h2>
+                    <p>Se cadastre no nosso site para ter acesso ao sistema</p>                    
                 </div>
             </div>
             <div class="row">
                 <div class="col">
-                    <p>Preencha o formulário para que nós possamos te ajudar melhor:</p>
+                    <p>Preencha o formulário:</p>
                     <form class="form">
 
-                        <!-- nome -->
-
                         <div class="row">
-                            <div class="col-md-1 col-sm-2">
+                            <!-- nome -->
+                            
+                            <div class="col-md-6 col-sm-12">
                                 <label for="nome">Nome:</label>
+                                <input class="form-control" type="text" name="nome" id="nome" placeholder="Digite seu nome">
                             </div>
-                        </div>
-                        <div class="form-row">
-                            <div class="col">
-                                <div class="input-group">
-                                    <input class="form-control" type="text" name="nome" id="nome" placeholder="Digite seu nome">
-                                </div>
-                            </div>
-                        </div>
 
-                        <!-- email -->
+                            <!-- email -->
 
-                        <div class="row">
-                            <div class="col-md-1 col-sm-2">
+                            <div class="col-md-6 col-sm-12">
                                 <label for="email">Email:</label>
+                                <input class="form-control" type="text" name="email" placeholder="Digite seu email" id="email">
                             </div>
                         </div>
+
+                        <!-- endereço -->
+
                         <div class="row">
                             <div class="col">
-                                <div class="input-group">
-                                    <input class="form-control" type="text" name="email" placeholder="Digite seu email" id="email">
-                                </div>
+                                <label for="endereco">Endereço completo:</label>
+                                <input type="text" name="endereco" id="endereco" class="form-control" placeholder="Digite seu endereço completo">
                             </div>
                         </div>
 
-                        <!-- cidade -->
+                        <!-- cidade, estado e cep -->
 
                         <div class="row">
-                            <div class="col-md-1 col-sm-2">
+
+                            <!-- cidade -->
+
+                            <div class="col">
                                 <label for="cidade">Cidade:</label>
-                            </div>
-                            <div class="col-md-4 col-sm-10">
                                 <input type="text" name="cidade" id="cidade" class="form-control" placeholder="Digite sua cidade">
                             </div>
 
-                        <!-- estado -->
+                            <!-- estado -->
 
-                            <div class="col-md-1 col-sm-2">
+                            <div class="col-md-3 col-sm-12">
                                 <label for="estado">Estado:</label>
-                            </div>
-                            <div class="col-md-3 col-sm-10">
                                 <select name="estado" id="estado" class="form-control">
                                     <option value="">Selecione um estado</option>
                                     <option value="sp">SP</option>
@@ -99,27 +93,19 @@
                                 </select>
                             </div>
 
-                        <!-- cep -->
-
-                            <div class="col-md-1 col-sm-2">
+                            <!-- cep -->
+                            <div class="col-md-3 col-sm-12">
                                 <label for="cep">CEP:</label>
-                            </div>
-                            <div class="col-md col-sm-10">
                                 <input type="text" name="cep" id="cep" class="form-control" placeholder="00000-000">
                             </div>
                         </div>
 
-                        <!-- produto -->
+                        <!-- info -->
 
                         <div class="row">
                             <div class="col">
-                                <label for="produto">Produto de interesse:</label>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col">
-                                <div class="input-group">
-                                    <textarea class="form-control" name="produto" id="produto" placeholder="Digite seu produto de interesse" rows="5"></textarea>
+                                <label for="info" class="form-check-label">Quero receber informações </label>
+                                <input type="checkbox" name="info" id="info">
                             </div>
                         </div>
 
