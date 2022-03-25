@@ -12,7 +12,7 @@
 </head>
 <body>
     <!-- Desenvolvido por Felipe Fonseca -->
-
+    
     <header id="home">
         <div class="container">
             <div class="row">
@@ -30,9 +30,69 @@
             </div>
         </div>
     </header>
-
+    
+    <!-- slides -->
+    
+    <section>
+        <div class="container">
+            <div class="row">
+                <h1 style="text-align: center;">Conheça nossos produtos</h1>
+            </div>
+            <div class="row">
+                <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="ratio ratio-21x9">
+                                <div class="d-flex justify-content-center" style="background-color: burlywood;">
+                                    <a class="d-flex justify-content-center" href="#produtos">
+                                        <img src="../imagens/maça.jpg" class="img-fluid" alt="...">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="ratio ratio-21x9">
+                                <div class="d-flex justify-content-center" style="background-color: burlywood;">
+                                    <a class="d-flex justify-content-center" href="#produtos">
+                                        <img src="../imagens/biscoito.jpg" class="img-fluid" alt="...">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="ratio ratio-21x9">
+                                <div class="d-flex justify-content-center" style="background-color: burlywood;">
+                                    <a class="d-flex justify-content-center" href="#produtos">
+                                        <img src="../imagens/dino.jpg" class="img-fluid" alt="...">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="ratio ratio-21x9">
+                                <div class="d-flex justify-content-center" style="background-color: darkgray;">
+                                    <a class="d-flex justify-content-center" href="#produtos">
+                                        <img src="../imagens/Lamborghini.jpg" class="img-fluid" alt="...">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+    
     <!-- sobre o site -->
-
+    
     <section id="sobre">
         <div class="container">
             <div class="row">
@@ -47,9 +107,9 @@
             </div>
         </div>
     </section>
-
+    
     <!-- Área de produtos -->
-
+    
     <section id="produtos">
         <div class="container">
             <div class="row">
@@ -101,9 +161,9 @@
             </div>
         </div>
     </section>
-
+    
     <!-- Área de contato -->
-
+    
     <section id="contato">
         <div class="container">
             <div class="row">
@@ -124,16 +184,16 @@
                         </div>
                         <div class="input-group">
                             <textarea class="form-control" name="produto" placeholder="Digite seu produto de interesse" rows="5"></textarea>
-                            </div>
+                        </div>
                         <button type="submit" class="btn btn-lg btn-success">Enviar</button>
                     </form>
                 </div>
             </div>
         </div>
     </section>
-
+    
     <!-- Trecho com os modals -->
-
+    
     <div class="modal fade" id="produto-1">
         <div class="modal-dialog">
             <div class="modal-content">
@@ -147,19 +207,83 @@
                         <thead>
                             <tr>
                                 <th>tamanho</t>
-                                <th>preço</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>8cm</td>
-                                <td>R$3.50</td>
-                            </tr>
-                            <tr>
-                                <td>4.5cm</td>
-                                <td>R$2.50</td>
-                            </tr>
-                        </tbody>
+                                    <th>preço</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>8cm</td>
+                                    <td>R$3.50</td>
+                                </tr>
+                                <tr>
+                                    <td>4.5cm</td>
+                                    <td>R$2.50</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="modal fade" id="produto-2">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Biscoito</h5>
+                        <button class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <h6>Ingredientes:</h6>
+                        <ul>
+                            <li>200 g de maizena</li>
+                            <li>200 g de farinha de trigo</li>
+                            <li>100 g de margarina</li>
+                            <li>4 ovos</li>
+                            <li>4 colheres (sopa) de açúcar</li>
+                            <li>1 colher de sopa de fermento</li>
+                            <li>Raspa de casca de laranja</li>
+                            <li>Leite o necessário</li>
+                        </ul>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="modal fade" id="produto-3">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Lamborghini</h5>
+                        <button class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <h6>Assista ao video dessa belíssima máquina:</h6>
+                        <iframe width="466" height="262" src="https://www.youtube.com/embed/fKNdoxRld34" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="modal fade" id="produto-4">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Dinossauro</h5>
+                        <button class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <h6>Veja as incriveis coisas que um dino pode fazer:</h6>
+                        <iframe width="466" height="262" src="https://www.youtube.com/embed/iyUn-p7rEUc?start=10" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </table>
                 </div>
                 <div class="modal-footer">
@@ -168,71 +292,7 @@
             </div>
         </div>
     </div>
-
-    <div class="modal fade" id="produto-2">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title">Biscoito</h5>
-                    <button class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <h6>Ingredientes:</h6>
-                    <ul>
-                        <li>200 g de maizena</li>
-                        <li>200 g de farinha de trigo</li>
-                        <li>100 g de margarina</li>
-                        <li>4 ovos</li>
-                        <li>4 colheres (sopa) de açúcar</li>
-                        <li>1 colher de sopa de fermento</li>
-                        <li>Raspa de casca de laranja</li>
-                        <li>Leite o necessário</li>
-                    </ul>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="modal fade" id="produto-3">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title">Lamborghini</h5>
-                    <button class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <h6>Assista ao video dessa belíssima máquina:</h6>
-                    <iframe width="466" height="262" src="https://www.youtube.com/embed/fKNdoxRld34" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="modal fade" id="produto-4">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title">Dinossauro</h5>
-                    <button class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <h6>Veja as incriveis coisas que um dino pode fazer:</h6>
-                    <iframe width="466" height="262" src="https://www.youtube.com/embed/iyUn-p7rEUc?start=10" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    </table>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                </div>
-            </div>
-        </div>
-    </div>
-
+    
     
     <script src="../libs/bootstrap/js/bootstrap.bundle.min.js"></script>
 </body>
