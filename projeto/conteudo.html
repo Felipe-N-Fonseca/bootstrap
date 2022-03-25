@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../imagens/logo-shapping-1000px.png">
+    <link rel="apple-touch-icon" href="../imagens/logo-shapping-1000px.png">
+    <link rel="stylesheet" href="../libs/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/custom.css">
+    <title>Shapping</title>
+</head>
+<body>
+    <!-- Desenvolvido por Felipe Fonseca -->
+    
+    <header id="home">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 justify-content-end">
+                    <img class="img-fluid" src="../imagens/logo-shapping-nomeada.png" alt="Shapping">
+                </div>
+                <div class="col">
+                    <ul class="nav justify-content-end">
+                        <li class="nav-item"><a class="btn btn-info" href="./index.html">Home</a></li>
+                        <li class="nav-item"><a class="btn btn-info" href="./index.html">Sobre</a></li>
+                        <li class="nav-item"><a class="btn btn-info" href="./index.html#produtos">Produtos</a></li>
+                        <li class="nav-item"><a class="btn btn-info" href="./index.html#contato">Contato</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    
+    <div class="container">
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="ratio ratio-21x9">
+                        <div class="d-flex justify-content-center">
+                            <img src="../imagens/biscoito.jpg" class="img-fluid" alt="...">
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="ratio ratio-21x9">
+                        <div class="d-flex justify-content-center">
+                            <img src="../imagens/dino.jpg" class="img-fluid" alt="...">
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="ratio ratio-21x9">
+                        <div class="d-flex justify-content-center">
+                            <img src="../imagens/Lamborghini.jpg" class="img-fluid" alt="...">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+    
+    <script src="../libs/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script>
+        var myCarousel = document.querySelector('#carouselExampleControls')
+        var carousel = new bootstrap.Carousel(myCarousel, {
+            interval: 2000
+        })
+    </script>
+</body>
+</html>
